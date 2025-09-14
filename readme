@@ -1,0 +1,10 @@
+main UUID: 47c18694a2ca
+tools UUID: 3e62ec359682
+extension UUID: cbb52a9b93a7
+
+Power: gpio 12
+Button: gpio 23
+
+
+Steppers tmc2209
+

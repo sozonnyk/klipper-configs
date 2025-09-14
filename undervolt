@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+status=$(vcgencmd get_throttled | cut -d= -f2)
+echo "get_throttled: $status"
+((status & 1))   && echo "• under-voltage NOW"
+((status & 1<<16)) && echo "• under-voltage occurred since boot"
