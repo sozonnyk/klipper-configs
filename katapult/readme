@@ -1,0 +1,12 @@
+  154  make clean KCONFIG_CONFIG=tools.config
+  155  make menuconfig KCONFIG_CONFIG=tools.config
+  156  make  KCONFIG_CONFIG=tools.config
+  158  sudo make KCONFIG_CONFIG=tools.config FLASH_DEVICE=2e8a:0003 flash
+
+  159  make clean KCONFIG_CONFIG=extension.config
+  160  make menuconfig KCONFIG_CONFIG=extension.config
+  161  make KCONFIG_CONFIG=extension.config
+  163  sudo make KCONFIG_CONFIG=extension.config FLASH_DEVICE=2e8a:0003 flash
+
+  164  /home/pi/katapult/scripts/flashtool.py -i can0 -q
+
